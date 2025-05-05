@@ -7,11 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .yellow
+        
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
     }
 
 
